@@ -1,4 +1,4 @@
-# LogSentinel (frontend)
+# CyberPulse (frontend)
 React + Vite dashboard for the Cloud-Based Cybersecurity Log Analysis and Threat Monitoring System.
 
 ## Run
@@ -9,3 +9,7 @@ React + Vite dashboard for the Cloud-Based Cybersecurity Log Analysis and Threat
 ## Expected API
 - `POST /upload` (multipart `file`) -> `{id, status}`
 - `GET /uploads`, `GET /alerts`, `GET /alerts/trend`, `GET /rules`
+
+## Auth
+- Mock mode (no `VITE_API_URL`): any email with a 6+ character password logs in.
+- Real mode: `POST /auth/signup` and `POST /auth/login` take JSON and return `{token, user:{email,name}}`. Every other request sends `Authorization: Bearer <token>`; a 401 logs the user out.
