@@ -914,3 +914,56 @@ h1 { margin-bottom: 7px; font: 800 25px 'Manrope', sans-serif; color: #172b39; l
     flex-direction: column;
   }
 }
+
+
+.history-file-name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 180px;
+}
+
+.history-file-name svg {
+  flex-shrink: 0;
+  color: #06a6c2;
+}
+
+.history-file-name span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.history-info-panel {
+  margin-top: 22px;
+}
+
+.history-info-panel p {
+  color: #8493a0;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-top: 8px;
+}
+
+.alert-action-button {
+  border: 1px solid #dce7ec;
+  background: #ffffff;
+  color: #078ba5;
+  padding: 7px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.alert-action-button:hover {
+  background: #eafafd;
+  border-color: #06a6c2;
+}
+
+.alert-action-button:focus-visible {
+  outline: 2px solid #06a6c2;
+  outline-offset: 2px;
+}
